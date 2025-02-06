@@ -1,0 +1,20 @@
+{
+  "name": "yaico",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cannon-es": "^0.20.0",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.173.0"
+  }
+}

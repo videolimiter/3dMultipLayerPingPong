@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Ball Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="lobby-screen">
+      <h1>Пинг-понг 3D</h1>
+      <div class="lobby-container">
+        <div class="games-section">
+          <h2>Доступные игры</h2>
+          <div id="games-list">
+            <!-- Здесь будет список игр -->
+          </div>
+        </div>
+        <div class="create-game-section">
+          <button id="create-game">Создать новую игру</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="welcome-screen" style="display: none">
+      <h1>Добро пожаловать в игру!</h1>
+      <button id="ready-button">Готов играть!</button>
+    </div>
+
+    <div id="game-container" style="display: none">
+      <div id="score-container">
+        <div id="leftScore">0</div>
+        <div id="rightScore">0</div>
+      </div>
+      <canvas id="game-canvas"></canvas>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/",
+          "cannon-es": "https://unpkg.com/cannon-es@0.20.0/dist/cannon-es.js",
+          "socket.io-client": "https://cdn.socket.io/4.4.1/socket.io.esm.min.js"
+        }
+      }
+    </script>
+    <script type="module" src="js/game.js"></script>
+  </body>
+</html>
